@@ -1,0 +1,83 @@
+.game {
+  animation-name: snake;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  display: flex;
+  width: 200px;
+  height: 25px;
+}
+
+.snake {
+  width: 150px;
+  height: 25px;
+  border-radius: 25px;
+  background-color: greenyellow;
+  margin-right: 25px;
+}
+
+.eyes {
+  margin: 2px 0 0 130px;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+@keyframes snake {
+  0% {
+    margin-top: 0;
+    margin-left: 0px;
+  }
+
+  24% {
+    margin-top: 0;
+
+    margin-left: 500px;
+
+    transform: rotate(0deg);
+  }
+
+  25% {
+    margin-top: 0;
+
+    margin-left: 500px;
+
+    transform: rotate(90deg);
+  }
+
+  49% {
+    margin-left: 500px;
+    margin-top: 500px;
+    transform: rotate(90deg);
+  }
+
+  50% {
+    margin-left: 500px;
+    margin-top: 500px;
+    transform: rotate(180deg);
+  }
+
+  74% {
+    margin-left: 0px;
+    margin-top: 500px;
+    transform: rotate(180deg);
+  }
+
+  75% {
+    margin-left: 0px;
+    margin-top: 500px;
+    transform: rotate(270deg);
+  }
+
+  99% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
